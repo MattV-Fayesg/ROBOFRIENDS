@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { robots } from "./assets/robots";
 import CardList from "./components/cardList/cardList";
 import SearchBox from "./components/searchBox/searchBox";
-import "./app.css";
+import "./App.css";
 
 class app extends Component {
   //adding state
