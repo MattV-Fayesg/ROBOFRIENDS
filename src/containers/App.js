@@ -38,7 +38,9 @@ class app extends Component {
       return (
         <div className="tc">
           <MediaQuery maxWidth={767}>
-            <h1 className="f1 grow dib br3 ma3 pa2 shadow-3">ROBOFRIENDS</h1>
+            <h1 className="f1 lh-title grow dib br3 ma3 pa2 shadow-3">
+              ROBOFRIENDS
+            </h1>
           </MediaQuery>
           <MediaQuery minWidth={767}>
             <h1 className="f-headline grow dib br3 ma3 pa2 shadow-3">
