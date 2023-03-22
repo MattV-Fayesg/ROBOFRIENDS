@@ -13,6 +13,7 @@ body {
     )
     repeat-y;
   background-size: 400% 400%;
+  background-blend-mode: multiply;
 }
 
 code {
