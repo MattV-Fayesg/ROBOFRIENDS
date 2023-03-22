@@ -3,6 +3,7 @@ import CardList from "../components/cardList/cardList";
 import SearchBox from "../components/searchBox/searchBox";
 import Scroll from "../components/scroll/scroll";
 import "./App.css";
+import ErrorBoundary from "../components/errorBoundry";
 
 //Smart Component
 class app extends Component {
@@ -40,7 +41,9 @@ class app extends Component {
           </h1>
           <SearchBox searchChange={this.onSearchChange} />
           <Scroll>
-            <CardList robots={filteredRobots} />
+            <ErrorBoundary>
+              <CardList robots={filteredRobots} />
+            </ErrorBoundary>
           </Scroll>
         </div>
       );
