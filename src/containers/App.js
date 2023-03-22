@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MediaQuery from "react-responsive";
 import CardList from "../components/cardList/cardList";
 import SearchBox from "../components/searchBox/searchBox";
 import Scroll from "../components/scroll/scroll";
@@ -36,9 +37,14 @@ class app extends Component {
     if (robots.length > 0) {
       return (
         <div className="tc">
-          <h1 className="f-headline grow dib br3 ma3 pa2 shadow-3">
-            ROBOFRIENDS
-          </h1>
+          <MediaQuery maxWidth={767}>
+            <h1 className="f1 grow dib br3 ma3 pa2 shadow-3">ROBOFRIENDS</h1>
+          </MediaQuery>
+          <MediaQuery minWidth={767}>
+            <h1 className="f-headline grow dib br3 ma3 pa2 shadow-3">
+              ROBOFRIENDS
+            </h1>
+          </MediaQuery>
           <SearchBox searchChange={this.onSearchChange} />
           <Scroll>
             <ErrorBoundary>
